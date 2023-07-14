@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Amazon</title>
+</head>
+<body>
+    <!-- --Header Content-- -->
+    <header class="header">
+        <!-- !layout -->
+        <div class="conatiner">
+            <div class="logo-container">
+                <div class="logo border-white">
+                    <span class="dotin">.in</span>
+                </div>
+            </div>
+            <div class="address-container border-white">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><style>svg{fill:#ffffff}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                </span>
+                <div class="content">
+                    <p>Hello</p>
+                    <p class="hello">Select Your address</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input class="search-bar" type="text">
+                <div class="search-icon border-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><style>svg{fill:#6e6a6a}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                </div>
+            </div>
+            <div class="region border-white">
+                <div class="language-image">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAsVBMVEX/mTMSiAf/////mjH//fv6+/cAgwAAAIgAAIUAAIMAAIAAAH4AAHvu7vfe3u7Hx+AAAHb5+f20tNb39/1LS6Ghocrk5PGSksSDg7utrdEAAHLMzOS+vtxSUqRERJzX1+oQEI1ERKMvL5Z/f7d5ebaYmManp88bG5JkZK/JyeEiIpFoaKqMjL9ycrSzs9uVlctYWKI3N5tgYKw6OpoeHo8YGJEsLJYAAJAbG5lYWKkmJpLm9FjFAAAEl0lEQVR4nO3ba3PiNhiGYaoeJB9kg0/YsbEg5rQkaUtINk3+/w/rK0OyDS/tTL9YmeG5Zgin/SDuNZYRZjQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPiffoZzo1/g3EjAOTTh0IRDEw5NuK/QpGjKu8XT5mlxVzaF68GIL9CkuJ8HvqeUknTx/GB+H7kekuMmdRZ4Utogvu/bLFJ6QVu7HZTTJsXMtxHU9iHMClNk4cNW2UR+5vQt5LLJym4Znj8VqWi0MEI3dGtKbySqsnI4LndNJjOfXnuXt1rE9v7v9k8sdJt31MqfTZyNzFkTvfOkak3/ytf2zx8ftyamVdLbaVdDc9VEz+llB/lxE4ntVLOkS3S8K3La86q5qyiOmkx2lCQvtUgruqen9GdLl6nNUKVClzlFeXP09nHUZOZJP+lv5XaKWdDlz9N1kfePN770Zm4G56bJil7wWjT97Ve6bCnMgXJsT/cpiVhTNjezj5MmEc04QXnarea0XaxWIt2k9kqs+82EnikDmn2cHNM6aZIp1dpdx2Rr9xiSjk1uhaarWyNSKU6P62mrVOZieC6axP77BpDuqUy1EGmotad1mIoFzcZ6n/bP0ubkxw7G56IJ/f+XadxPKoWkOCoRm1yHOt+IRFEKeTyyj9OSticH43PQxNAOlmbgvD8+i/xaJMGka4tx0XYiqETtG/uE3a9UtJs1ww/QQZOOXqmddKOZrfItTIS8a4IojILmTooktG+XambfXAuqVw4/QAdNnqS3Oh6i5nPaXpJxHo8jr36pvWgcr8d02JI8HydhvfLk0/ADHL4J7Tnn7weoOntJRH7TLMsymSVluWxucpHM2/elgsncxXQ8fJO1p7aTOGmOm0rlb+IkjPZ1VVb1PgqTbzu/6p/RcRJPHtXp3pCGb0KTid1HmOnrY04fiyfbcWduTdfu2858N914m9IH4/X29d78+MfDGr5JpmR4POqIVptgv4yjbm/afj02M/ulibuDP58e3zFxKB0ctg3f5E2p2ccqQJEfQlWapSctb2nuVXi7+lh51DOl3gYf4fBNaNpJP+6kuqhNnR9U30QdVrGpC/2P511MPMM3eZYqMk01ffz+EtzcjMnLw14eHcoX+wA9LP/Kujw2kZKbwUeI7YTD/oT7IvNOdt3zzr8fn5RXe3xS4TiWweedC/C5mPu8fhJj/UScrbMZrLP16ANfd7Ye+3xxPba7mvXY/1y3b/t1++PuhvbGwbWs2+P7nQs+fw+4xveAFr4vvgDnFXCTN5x/wuA8pQtwPtsFx/MelxfOe1xe63mPAufHXoTzqC/B+faXFPfPn36X8Xz1v8vo9b/f2W12+P3O14UmHJpwaMKhCTf6Fc6NfoNzo5/gHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCYcmHJpwaMKhCfc3xgk4+urIdocAAAAASUVORK5CYII=" alt="">
+                </div>
+                <p class="language">EN</p>
+                <select class="lang-opt">
+                    <option></option>
+                </select>
+            </div>
+            <div class="sign-in border-white">
+                <div class="Account">
+                <span class="login">Hello,Sign in</span>
+                <div>
+                    <p class="font">Account & List</p>
+                </div>
+                </div>
+                <select class="acc-opt lang-opt">
+                    <option></option>
+                </select>
+            </div>
+            <div class="return border-white">
+                <div class="returns"> <p> Returns</p></div>
+                <p class="order"> & Orders</p>
+            </div>
+            <div class="cart border-white">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 576 512"><style>svg{fill:#ffffff}</style><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>
+                <p>Cart</p>
+            </div>
+
+        </div>
+    </header>
+    <!-- !-- Mid Section! -->
+    <div class="image-conatiner">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IN-Events/PD23/GW/PD23_PC_Hero_2x_3Days_EN._CB601872317_.jpg" alt="">
+    </div>
+        <div class="middle">
+             <div class="p-box-1 box">
+                <div class="heading">
+                <h2>Pick up Where you left off</h2>
+                </div>
+            <div>
+                <div class="pic-1 pic">
+                    <div class="desc">
+                        <img src="https://m.media-amazon.com/images/I/61xtSiirB7L._AC_SY135_.jpg" alt="">
+                        <p>ViewSonic VA 1655 16</p>
+                    </div>
+                    <div class="desc">
+                        <img src="https://m.media-amazon.com/images/I/61OK1jk-t+L._AC_SY135_.jpg" alt="">
+                        <p>Riiteck 15.6 inch</p>
+                    </div>
+                </div> 
+                <div class="pic-2 pic">
+                    <div class="desc">
+                        <img src="https://m.media-amazon.com/images/I/61o5AQUUqBL._AC_SY135_.jpg" alt="">
+                        <p>Miracle Digital 15.6inch</p>
+                    </div>
+                    <div class="desc">
+                        <img src="https://m.media-amazon.com/images/I/51D2HBykO6L._AC_SY135_.jpg" alt="">
+                        <p>cloudWalker 40cm</p>
+                    </div>
+                </div>
+            </div>
+             </div>
+            <div class="p-box-2 box">
+                <div class="heading">
+                <h2>Keep Shopping for</h2>
+                </div>
+                <div class="pic-1 pic">
+                    <div class="desc-1">
+                        <img src="https://m.media-amazon.com/images/I/61xtSiirB7L._AC_SY135_.jpg" alt="">
+                        <p>ViewSonic VA 1655 16</p>
+                    </div>
+                    <div class="desc-1 l-image">
+                        <img src="https://m.media-amazon.com/images/I/31vkGCNbjnL._MCnd_AC_.jpg" alt="" height="140px">
+                        <p>SmartPhone & Basics</p>
+                    </div>
+                </div> 
+                <div class="pic-2 pic">
+                    <div class="desc-1">
+                        <img src="https://m.media-amazon.com/images/I/41ay8ukwMUL._MCnd_AC_.jpg" alt="" height="140px">
+                        <p>Moistorizer</p>
+                    </div>
+                    <div class="desc-1 l-image">
+                        <img src="https://m.media-amazon.com/images/I/31njnbTfHTL._MCnd_AC_.jpg" alt="" height="140px" width="200px">
+                        <p>Tubelight and Batten</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-box-3 box">
+                <div class="heading">
+                    <h2>Buy Again</h2>
+                </div>
+                <div>
+                    <div class="pic-1 pic">
+                        <div class="desc-3">
+                            <img src="https://m.media-amazon.com/images/I/81ru+JG5l3L._AC_SY119_.jpg" alt="">
+                        </div>
+                        <div class="desc-3 l-image">
+                            <img src="https://m.media-amazon.com/images/I/41oDLQF7z+L._AC_SY119_.jpg" alt="" height="140px">
+                        </div>
+                    </div> 
+                    <div class="pic-2 pic">
+                        <div class="desc-3">
+                            <img src="https://m.media-amazon.com/images/I/81IGCSrtkdL._AC_SY119_.jpg" alt="" width="140px">
+                        </div>
+                        <div class="desc-3 l-image">
+                            <img src="https://m.media-amazon.com/images/I/61OfUYLkFEL._AC_SY119_.jpg" alt="" height="140px">
+                        </div>
+                    </div>
+                    <p>Shop your essential</p>
+                </div>
+        </div>
+        <div class="box last-box">
+            <div class="text">
+                <h3>Get 50% off on Selling Fee*</h3>
+                <p>Become a Seller</p>
+            </div>
+            <div>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/amazonservices/landing/ATF-imagery-card2_115x115._CB600935912_.jpg" alt="">
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    /* background-color: green; */
+}
+.header{
+    background-color: rgb(18, 18, 18);
+    height: 80px;
+    width: 100vw;
+}
+.conatiner{
+    /* background-color: red; */
+    width: 98%;
+    height: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+.logo-conatiner{
+    height: 50px;
+    width: 500px;
+    position: relative;
+    display: inline-flex;
+    justify-content: space-around;
+    margin: auto;
+    background-color: rgb(42, 9, 9);
+    color: white;
+ }
+.logo{
+    background: url(https://m.media-amazon.com/images/G/31/gno/sprites/nav-sprite-global-2x-reorg-celnav._CB590297325_.png);
+    width:210px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position-y: 19.5%;
+    overflow: hidden;
+}
+.border-white:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.dotin{
+    position: absolute;
+    /* background-color: red; */
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+    margin-left:9% ;
+    margin-top: 22px;
+
+}
+.address-container{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 70px;
+}
+.icon{
+    padding-top: 30px;
+    height: 50px;
+    width: 40px;
+    padding-left: 20px;
+}
+.content{
+    margin-top: 20px;
+    height: 40px;
+    /* background-color: red; */
+}
+.hello{
+    float: left;
+    margin-top: -20px;
+}
+.search-container{
+    margin: 15px;
+    display: flex;
+    height: 50px;
+}
+.search-container:hover{
+    border: 2px solid #fdbd46 ;
+    border-radius: 5px;
+}
+.search-bar{
+    width: 50em;
+    border: none;
+}
+.search-select{
+    text-align: center;
+    border: none;
+    width: 60px;
+    background-color: rgb(195, 195, 195);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.search-icon{
+    text-align: center;
+    padding: 10px;
+    background-color: #EDBF69;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 60px;
+}
+.region{
+    display: flex;
+    padding: 25px;
+    text-align: center;
+}
+.language{
+    margin-left: 5px;
+
+}
+.language-image{
+    /* padding: 5px; */
+    height: 17px;
+    width: 22px;
+    margin-left: 10px;
+}
+.language-image img{
+    width: 100%;
+    height: 100%;
+}
+.lang-opt{
+    background: transparent;
+    border: none;
+    padding-top: 35px;
+    color: white;
+}
+.sign-in{
+    display: flex;
+    padding:10px;
+}
+.login{
+    padding-top: 20px;
+}
+.font{
+    font-size: 20px;
+    font-weight: 600;
+}
+.return{
+    padding: 15px;
+    margin-left: 10px;
+}
+.returns{
+    height: 20px;
+}
+.order{
+    font-size: 15px;
+    font-weight: 700;
+}
+.cart{
+    display: flex;
+    padding: 20px;
+}
+.cart p{
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.box{
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    width: 450px;
+    margin-left: 2%;
+    margin-top: -27%;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+}
+.image-conatiner img{
+    width: 100vw;
+    height: 100vh;
+}
+.pic{
+    display: flex;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    background-color: #fff;
+}
+.pic-2{
+    margin-left: 5%;
+}
+.middle{
+    display: flex;
+    flex-direction: row;
+}
+.desc-1 img{
+    margin-left: 1%;
+}
+.l-image img{
+    margin-left: 18%;
+}
+.desc-3{
+    margin-left: 10%;
+}
+.last-box{
+    display: flex;
+    margin-right: 2%;
+    height: 150px;
+}
+.text h3{
+    padding-right: 40px;
+    float: left;
+    text-align: left;
+}
+.text p{
+    color: rgb(83, 83, 199);
+    text-align: center;
+}
+
+
+
